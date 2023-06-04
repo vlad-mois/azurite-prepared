@@ -19,7 +19,7 @@ then
     nvm install v14.17.0
 fi
 
-echo "copying archives"
+echo "extracting archives"
 cd /usr/local/lib && tar xzf $REPO_ABS_PATH/usr-local-lib-node_modules.tar.gz
 cd /opt && tar xzf $REPO_ABS_PATH/opt-azurite.tar.gz
 

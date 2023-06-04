@@ -1,10 +1,5 @@
 #!/bin/bash
 
-if ! [[ type node > /dev/null 2>&1 && which node > /dev/null 2>&1 ]]; then
-    echo "node not installed"
-    exit 1
-fi
-
 export CURRENT_PATH=$(pwd)
 export REPO_ABS_PATH=$(readlink -f $1)
 

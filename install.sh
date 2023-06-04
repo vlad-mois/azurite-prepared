@@ -20,8 +20,8 @@ then
 fi
 
 echo "copying archives"
-cd /usr/local/lib && tar xzvf $REPO_ABS_PATH/usr-local-lib-node_modules.tar.gz
-cd /opt && tar xzvf $REPO_ABS_PATH/opt-azurite.tar.gz
+cd /usr/local/lib && tar xzf $REPO_ABS_PATH/usr-local-lib-node_modules.tar.gz
+cd /opt && tar xzf $REPO_ABS_PATH/opt-azurite.tar.gz
 
 cd /opt/azurite && npm config set unsafe-perm=true && npm install -g --loglevel verbose
 

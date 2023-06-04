@@ -3,6 +3,8 @@
 export CURRENT_PATH=$(pwd)
 export REPO_ABS_PATH=$(readlink -f $1)
 
+echo "BASHRC=$BASHRC"
+
 echo "check npm installed"
 if ! command -v npm
 then
@@ -10,6 +12,7 @@ then
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh \
       | bash \
       && source $BASHRC
+    npm -v
 fi
 
 echo "check node installed"
